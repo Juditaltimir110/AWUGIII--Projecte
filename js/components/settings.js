@@ -12,7 +12,12 @@ const SettingsTemplate = {props: [],
                   'Cat',
                   'Dog',
                   'Rabbit'
-                ]
+                ],
+        stiloPrueba:{
+            
+            color: "red"
+                              
+                          }
     }),
         methods: {
               onConfirm () {
@@ -32,7 +37,7 @@ const SettingsTemplate = {props: [],
                             <md-list>
                                 <md-list-item md-expand>
                                     <md-icon>videogame_asset</md-icon>
-                                    <span class="md-list-item-text">Games</span>
+                                    <span class="md-list-item-text" :style="stiloPrueba">Games</span>
 
                                     <md-list slot="md-expand">
                                       <md-list-item class="md-inset">Console</md-list-item>
